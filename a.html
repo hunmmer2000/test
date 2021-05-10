@@ -1,2 +1,15 @@
-
-<a href="https://google.com">aaa</a>
+<script>
+  var xhr = new XMLHttpRequest();
+	xhr.open("GET", "https://github.com/hunmmer2000/test/commits/main");
+	xhr.onreadystatechange  = function (e) {
+	  if (xhr.readyState === 4) {
+		if (xhr.status === 200) {
+		  console.log(xhr);
+		} else {
+		  console.log("error");
+		}
+	  }
+	};
+	xhr.send();
+  
+</script>
